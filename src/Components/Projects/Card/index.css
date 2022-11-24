@@ -1,0 +1,182 @@
+.project-card-link {
+    text-decoration: none;
+    color: var(--fg-color);
+    background: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    max-width: 100%;
+    min-width: 100%;
+    padding:15px;
+    box-sizing: border-box;
+}
+
+.project-card {
+    width: 100%;
+    max-width: 100%;    
+    min-width: 100%;
+    display: flex;   
+    flex-direction: column; 
+    border: 4px solid var(--bg-color-light);
+    box-sizing: border-box;    
+    border-radius: 5px;
+}
+
+.project-card img {
+    width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 1px 1px 0 0;
+    object-fit: cover;
+}
+
+.project-card .skills {
+    position: relative;
+    box-sizing: border-box;
+    margin:15px;
+    margin-top:30px;
+    color: var(--fg-color-gray);
+}
+
+.project-card .skills h4 {
+    position: absolute;
+    font-size: 1.1em;    
+    top: -30px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.project-card .skills ul {
+    background-color: var(--bg-color-dark);
+    margin: 0;
+    padding: 26px;
+    box-sizing: border-box;
+    list-style: '- ';
+}
+
+.project-card .column {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-card-link:hover .project-card {
+    border: var(--accent-color, #FFB86C) 4px solid;
+}
+
+.project-card-link:hover .project-card .info h3 {
+    color: var(--accent-color, #FFB86C);
+}
+
+.project-card-link:hover .project-card.in-action .info h3 {
+    color: var(--fg-color);
+}
+
+.project-card-link:hover .project-card.in-action {
+    border: var(--bg-color-light) 4px solid;
+}
+
+.project-card .image {    
+    max-width: 100%;        
+    height: 240px;
+    flex-shrink: 1;    
+    display: flex;    
+    background-color: black;
+}
+
+.project-card .image video {
+    width: 100%;
+    border-radius: 2px 2px 0 0;
+    object-fit: contain;
+}
+
+.project-card .info h3 {
+    background-color: var(--bg-color);
+    box-sizing: border-box;
+    width: 100%;
+    margin:0;
+    padding:15px;    
+    font-size:1.4em;
+    font-weight: bold;
+}
+
+.project-card .info p {
+    padding:3px 15px;
+    padding-bottom: 15px;    
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.project-card .info p::after {
+    position: absolute;
+    top:0;
+    left:15%;
+    content:"";
+    width:70%;
+    height: 100%;
+    margin: 0 auto;
+    border-bottom: 2px solid var(--bg-color-light);
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;    
+    background-color: var(--bg-color-dark);
+    padding:12px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.actions .external_icon {
+    justify-self:end;
+    margin-left:auto;    
+    display: flex;
+}
+
+.actions .external_icon.glow {
+    color:var(--accent-color)
+}
+
+.actions a.action-link {
+    display: flex;
+    align-items: center;
+    color: var(--fg-color-gray);
+    text-decoration: none;
+    padding: 0;
+    margin:0;
+    padding:0 8px;
+}
+
+.actions a.action-link:hover span {
+    color:var(--accent-color)
+}
+.actions a.action-link span {
+    padding:0 5px;
+    display: block;
+}
+
+@media screen {
+
+    @media screen and (max-width: 1080px) {
+        .project-card {
+            flex-direction: column;
+        }
+
+        .project-card .image {
+            max-width: 100%;
+        }
+
+        .project-card .column {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 802px) {}
+}

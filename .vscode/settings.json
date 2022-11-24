@@ -1,0 +1,22 @@
+{
+    "spellright.language": [
+        "en-US-9-0.",
+        "en_US-large",
+        "en_US"
+    ],
+    "spellright.documentTypes": [
+        "latex",
+        "plaintext",
+        "html",
+        "javascript",
+        "js",
+        "markdown"
+    ],
+    "grammarly.selectors": [
+        {
+            "language": "typescriptreact",
+            "scheme": "file",
+            "pattern": "src/Assets/Projects/ArchLinuxDotFilesAndScripts/index.tsx"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+.tags-wrapper {
+    background-color: var(--bg-color-light);
+    padding: 9px;
+    box-sizing: border-box;
+}
+
+.tags-wrapper h4 {
+    font-size: 1.1em;
+    padding:9px 0;
+    margin:0;
+    color:var(--fg-color-gray);    
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;        
+}
+
+@media screen {
+
+    @media screen and (max-width: 1080px) {}
+
+    @media screen and (max-width: 802px) {
+        .tags {}
+    }
+}

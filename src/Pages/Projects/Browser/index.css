@@ -1,0 +1,26 @@
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 100%;
+    height:calc(100vh - 45px);
+    max-height:calc(100vh - 45px - 5vmin);
+    box-sizing: border-box;    
+}
+
+.projects-container .header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding:0 10px;
+    box-sizing: border-box;
+    color:var(--fg-color-gray)
+}
+
+@media screen {
+
+    @media screen and (max-width: 1080px) {}
+
+    @media screen and (max-width: 802px) {}
+}

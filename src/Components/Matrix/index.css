@@ -1,0 +1,67 @@
+.matrix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--bg-color);    
+    z-index: -1;
+}
+
+
+.matrix .matrix-block {
+    opacity: 0;
+    position: absolute;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn;
+}
+
+.matrix .matrix-block.first {
+    animation: fadeOut;
+    opacity: 1;
+}
+
+
+.matrix .matrix-block.color1 {
+    color: var(--blue);
+}
+
+.matrix .matrix-block.color2 {
+    color: var(--green);
+}
+
+.matrix .matrix-block.color3 {
+    color: var(--orange);
+}
+
+.matrix .matrix-block.color4 {
+    color: var(--purple)
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

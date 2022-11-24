@@ -1,0 +1,70 @@
+.typist {
+    padding: 1em;    
+    background-color: var(--bg-color-dark-transparent);
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    text-align: left;
+    border-top: var(--bg-color-light) 2px solid;
+    border-bottom: var(--bg-color-light) 2px solid;
+}
+
+.typist-text {
+    color: var(--fg-color);
+}
+
+.typist-text .typist-prompt {
+    color: var(--accent-color, #FFB86C);
+}
+
+.typist-text span {
+    font-size: 1em;
+}
+
+.typist-blinker.on-top {
+    position: absolute;
+}
+
+.typist-blinker.hidden {
+    opacity: 0;
+}
+
+.typist-blinker.blink {
+    animation-name: blink;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    opacity: 0;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+@media screen {
+
+    @media screen and (max-width: 1080px) {}
+
+    @media screen and (max-width: 802px) {
+
+        .typist {
+            width: 250px;                        
+            height: 100%;
+            display: flex;
+            align-items: center;
+            border: none;
+            border-right: var(--bg-color-light) 2px solid;
+            border-left: var(--bg-color-light) 2px solid;
+        }
+    }
+}

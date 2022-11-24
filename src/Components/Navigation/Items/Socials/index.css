@@ -1,0 +1,18 @@
+.nav-socials {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+@media screen {
+
+    @media screen and (max-width: 1080px) {
+        .nav-socials {
+            padding: 0;
+        }
+    }
+
+    @media screen and (max-width: 802px) {
+        
+    }
+}

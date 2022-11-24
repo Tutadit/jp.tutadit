@@ -1,0 +1,26 @@
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 1.2em;
+    line-height: 1.3em;
+    padding:2em;
+    box-sizing: border-box;
+}
+
+.about p {
+    margin: 15px 0;
+}
+
+.about-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+@media screen {
+
+    @media screen and (max-width: 1080px) {}
+
+    @media screen and (max-width: 802px) {}
+}

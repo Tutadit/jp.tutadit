@@ -1,0 +1,37 @@
+.bread-crumbs {
+    display: flex;
+    align-items: center;        
+    padding:1em;
+    box-sizing: border-box;        
+    background-color: var(--bg-color-dark);
+    height:45px;
+    position: sticky;
+    z-index:5;
+    top:0;
+}
+
+.bread-crumbs a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color:var(--fg-color-gray);
+}
+
+.bread-crumbs a:hover {
+    color:var(--fg-color)
+}
+
+.bread-crumbs .crumb {
+    display:flex
+}
+
+.bread-crumbs span.crumb-divider {
+    display: flex;
+    color:var(--accent-color)
+}
+
+@media screen {
+
+    @media screen and (max-width: 1080px) {}
+
+    @media screen and (max-width: 802px) {}
+}

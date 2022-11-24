@@ -1,0 +1,72 @@
+.container.see-through-background {    
+    background: var(--bg-color-light-transparent);    
+}
+
+.container.opaque-background {
+    background: #0d0d0f;    
+}
+
+.container.bordered {
+    box-sizing: border-box;
+    border: var(--bg-color-light) 4px solid;
+}
+
+.container.blured {
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+}
+
+.container.extra-blured {
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+.container.rounded-corners {
+    border-radius: 7px;
+}
+
+.container.drop-shadow {
+    -webkit-box-shadow: 0px 0px 10px 0px var(--bg-color-dark-transparent);
+    -moz-box-shadow: 0px 0px 10px 0px var(--bg-color-dark-transparent);
+    box-shadow: 0px 0px 10px 0px var(--bg-color-dark-transparent);
+}
+
+.container.padded {
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.container.titled {
+    position: relative;
+}
+
+.container .container-title {
+    display: flex;
+    align-items: center;
+}
+
+.container .container-title span.container-title-icon {
+    font-size: 1.2em;
+    color: var(--accent-color,#FFB86C);
+    display: flex;
+}
+
+.container .container-title h1 {
+    font-size: 1.4em;
+    font-weight: normal;
+}
+
+@media screen {
+
+    @media screen and (max-width: 1080px) {
+        .container.padded {
+            padding: 40px;
+        }
+    }
+
+    @media screen and (max-width: 802px) {
+        .container.padded {
+            padding: 30px;
+        }
+    }
+}

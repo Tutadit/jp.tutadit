@@ -1,0 +1,36 @@
+<ges version='0.7'>
+  <project properties='properties;' metadatas='metadatas, author=(string)&quot;&quot;, scaled_proxy_width=(int)1920, scaled_proxy_height=(int)1080, pitivi::title_safe_area_vertical=(double)0.80000000000000004, pitivi::title_safe_area_horizontal=(double)0.80000000000000004, pitivi::action_safe_area_vertical=(double)0.90000000000000002, pitivi::action_safe_area_horizontal=(double)0.90000000000000002, render-scale=(double)100, pitivi::project-id=(string)0a777586023545e585130fc87786b226, year=(string)2022;'>
+    <encoding-profiles>
+      <encoding-profile name='pitivi-profile' description='Pitivi encoding profile' type='container' preset-name='webmmux' format='video/webm' >
+        <stream-profile parent='pitivi-profile' id='0' type='video' presence='0' format='video/x-vp8, profile=(string){ 0, 1, 2, 3 }' preset-name='vp8enc' restriction='video/x-raw, width=(int)1280, height=(int)720, framerate=(fraction)30000/1001, pixel-aspect-ratio=(fraction)1/1' pass='0' variableframerate='0' />
+        <stream-profile parent='pitivi-profile' id='1' type='audio' presence='0' format='audio/x-vorbis, rate=(int)[ 1, 200000 ], channels=(int)[ 1, 255 ]' preset-name='vorbisenc' restriction='audio/x-raw, channels=(int)2, rate=(int)44100' />
+      </encoding-profile>
+    </encoding-profiles>
+    <ressources>
+      <asset id='file:///home/jp/Osloz/jp.tutadit.com/src/Assets/Projects/MrBlobsMorning/video.mp4' extractable-type-name='GESUriClip' properties='properties, supported-formats=(int)6, duration=(guint64)102074908241;' metadatas='metadatas, audio-codec=(string)&quot;MPEG-4\ AAC\ audio&quot;, language-code=(string)en, datetime=(datetime)2021-10-29T03:03:37Z, private-qt-tag=(sample)00000019677373740000001164617461000000010000000030:None:c2VnbWVudCwgZmxhZ3M9KEdzdFNlZ21lbnRGbGFncylHU1RfU0VHTUVOVF9GTEFHX05PTkUsIHJhdGU9KGRvdWJsZSkxLCBhcHBsaWVkLXJhdGU9KGRvdWJsZSkxLCBmb3JtYXQ9KEdzdEZvcm1hdCl0aW1lLCBiYXNlPShndWludDY0KTAsIG9mZnNldD0oZ3VpbnQ2NCkwLCBzdGFydD0oZ3VpbnQ2NCkwLCBzdG9wPShndWludDY0KTE4NDQ2NzQ0MDczNzA5NTUxNjE1LCB0aW1lPShndWludDY0KTAsIHBvc2l0aW9uPShndWludDY0KTAsIGR1cmF0aW9uPShndWludDY0KTE4NDQ2NzQ0MDczNzA5NTUxNjE1OwA_:YXBwbGljYXRpb24veC1nc3QtcXQtZ3NzdC10YWcsIHN0eWxlPShzdHJpbmcpaXR1bmVzOwA_, container-format=(string)&quot;ISO\ MP4/M4A&quot;, video-codec=(string)&quot;H.264\ /\ AVC&quot;, file-size=(guint64)9273737, pitivi::tags=(string)&quot;&quot;;' >
+        <stream-info id='e6cb8be341b5482df1d1a987cab70629843a79d4c020d18ce939ade671c52789/002' extractable-type-name='GESAudioUriSource' properties='properties, track-type=(int)2;' metadatas='metadatas;' caps='audio/mpeg, mpegversion=(int)4, framed=(boolean)true, stream-format=(string)raw, level=(string)2, base-profile=(string)lc, profile=(string)lc, codec_data=(buffer)12100000000000000000000000000000, rate=(int)44100, channels=(int)2'/>
+        <stream-info id='e6cb8be341b5482df1d1a987cab70629843a79d4c020d18ce939ade671c52789/001' extractable-type-name='GESVideoUriSource' properties='properties, track-type=(int)4;' metadatas='metadatas;' caps='video/x-h264, stream-format=(string)avc, alignment=(string)au, level=(string)3.1, profile=(string)high, codec_data=(buffer)0164001fffe1001b6764001facd1005005bb016a0202028000003200000bb5078c188901000468eb8f2c, width=(int)1280, height=(int)720, framerate=(fraction)30000/1001, pixel-aspect-ratio=(fraction)1/1, chroma-format=(string)4:2:0, bit-depth-luma=(uint)8, bit-depth-chroma=(uint)8, colorimetry=(string)bt709, parsed=(boolean)true'/>
+      </asset>
+      <asset id='crossfade' extractable-type-name='GESTransitionClip' properties='properties, supported-formats=(int)6;' metadatas='metadatas, description=(string)GES_VIDEO_STANDARD_TRANSITION_TYPE_CROSSFADE;' >
+      </asset>
+    </ressources>
+    <timeline properties='properties, auto-transition=(boolean)true, snapping-distance=(guint64)606207565;' metadatas='metadatas, markers=(GESMarkerList)&quot;marker-list-flags, flags=(int)0&quot;, duration=(guint64)22222200001;'>
+      <track caps='video/x-raw(ANY)' track-type='4' track-id='0' properties='properties, message-forward=(boolean)true, restriction-caps=(string)&quot;video/x-raw\,\ width\=\(int\)1280\,\ height\=\(int\)720\,\ framerate\=\(fraction\)30000/1001\,\ pixel-aspect-ratio\=\(fraction\)1/1&quot;, id=(string)60d4a884ab762b0796797453eff3bc12;' metadatas='metadatas;'/>
+      <track caps='audio/x-raw(ANY)' track-type='2' track-id='1' properties='properties, message-forward=(boolean)true, restriction-caps=(string)&quot;audio/x-raw\,\ rate\=\(int\)44100\,\ channels\=\(int\)2&quot;, id=(string)8c72ef13de93496e05755fa624a79173;' metadatas='metadatas;'/>
+      <layer priority='0' properties='properties, auto-transition=(boolean)true;' metadatas='metadatas, volume=(float)1;' deactivated-tracks='1 '>
+        <clip id='0' asset-id='file:///home/jp/Osloz/jp.tutadit.com/src/Assets/Projects/MrBlobsMorning/video.mp4' type-name='GESUriClip' layer-priority='0' track-types='4' start='0' duration='7741066667' inpoint='36136100000' rate='0' properties='properties, name=(string)uriclip5;' metadatas='metadatas;'>
+          <source track-id='0' properties='properties, track-type=(int)4, has-internal-source=(boolean)true;' metadatas='metadatas, user_markers=(GESMarkerList)"marker-list-flags, flags=(int)0", last_chosen_list=(string)user_markers;'  children-properties='properties, GstFramePositioner::alpha=(double)1, GstFramePositioner::height=(int)720, GstFramePositioner::operator=(int)1, GstFramePositioner::posx=(int)0, GstFramePositioner::posy=(int)0, GstVideoDirection::video-direction=(int)8, GstFramePositioner::width=(int)1280;'>
+            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 36136100000:1  43877166667:1 '/>
+          </source>
+        </clip>
+        <clip id='1' asset-id='file:///home/jp/Osloz/jp.tutadit.com/src/Assets/Projects/MrBlobsMorning/video.mp4' type-name='GESUriClip' layer-priority='0' track-types='4' start='7741066667' duration='14481133334' inpoint='87587500000' rate='0' properties='properties, name=(string)uriclip8;' metadatas='metadatas;'>
+          <source track-id='0' properties='properties, track-type=(int)4, has-internal-source=(boolean)true;' metadatas='metadatas, user_markers=(GESMarkerList)"marker-list-flags, flags=(int)0", last_chosen_list=(string)user_markers;'  children-properties='properties, GstFramePositioner::alpha=(double)1, GstFramePositioner::height=(int)720, GstFramePositioner::operator=(int)1, GstFramePositioner::posx=(int)0, GstFramePositioner::posy=(int)0, GstVideoDirection::video-direction=(int)8, GstFramePositioner::width=(int)1280;'>
+            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 87587500000:1  102068633334:1 '/>
+          </source>
+        </clip>
+      </layer>
+      <groups>
+      </groups>
+    </timeline>
+  </project>
+</ges>

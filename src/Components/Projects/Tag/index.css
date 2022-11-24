@@ -1,0 +1,42 @@
+button.tag {
+    display: flex;
+    align-items: center;
+    background: var(--bg-color-dark);    
+    border-radius: 0;
+    border: 1px solid var(--bg-color-dark);
+    color: var(--fg-color-gray);
+    text-transform: uppercase;
+    padding: 5px;
+    cursor: pointer;
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+button.tag.selected,
+button.tag:hover {
+    border: 1px solid var(--accent-color,#FFB86C);
+    color:rgb(237, 237, 240)
+}
+
+button.tag span {
+    display: flex;
+}
+
+button.tag .tag-icon {
+    color:var(--fg-color-gray);
+    display: flex;
+    font-size: 1.5em;    
+    margin-left:6px;
+}
+
+button.tag.selected .tag-icon,
+button.tag:hover .tag-icon {
+    color:var(--accent-color,#FFB86C);
+}
+
+@media screen {
+
+    @media screen and (max-width: 1080px) {}
+
+    @media screen and (max-width: 802px) {}
+}

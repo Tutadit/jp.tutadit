@@ -1,0 +1,16 @@
+.projects {
+    display:block;    
+    padding:15px;
+    columns: 2;
+}
+
+@media screen {
+
+    @media screen and (max-width: 1080px) {
+        .projects {
+            columns: 1;
+        }
+    }
+
+    @media screen and (max-width: 802px) {}
+}

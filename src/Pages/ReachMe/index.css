@@ -1,0 +1,47 @@
+.reach-me {
+    
+}
+
+.reach-me form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin:0 auto;
+}
+
+.reach-me form label {
+    font-size: 1.2em;
+    margin:10px 0;
+}
+
+.reach-me form input,
+.reach-me form textarea {
+    background-color: var(--bg-color-darker);
+    color:var(--fg-color);
+    border:none;
+    border-radius: 4px;
+    padding:8px;     
+}
+
+.reach-me form button {
+    background-color: var(--bg-color-darker);
+    color:var(--fg-color);
+    border:none;
+    border-radius: 4px;
+    margin-top:10px;
+    cursor:pointer;
+    padding:8px;
+}
+
+.reach-me form button:hover,
+.reach-me form button:active {
+    background-color: var(--accent-color);
+    color:var(--bg-color-dark)
+}
+
+@media screen {
+
+    @media screen and (max-width: 1080px) {}
+
+    @media screen and (max-width: 802px) {}
+}
