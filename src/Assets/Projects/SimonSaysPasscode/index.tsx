@@ -7,8 +7,8 @@ const SimonSaysPasscode: ProjectType = {
     title: "Simon Says Passcode",
     slug: "simon-says-passcode",
     tags: [
-        'html',
-        'css',
+        'HTML',
+        'CSS',
         'js'
     ],
     github: "https://github.com/Tutadit/CPSC581-P2-Sensor",
@@ -16,14 +16,14 @@ const SimonSaysPasscode: ProjectType = {
     description: "Unlock your phone by tilting it to reproduce a pre-established pattern.",
     info: (
         <div>
-            <p>An alternative to slide-to-unlock, unlock by tilting your device in the right directions. May be used as a quick game to play each time you ulock your phone. It may also be used as a passcode.</p>
+            <p>An alternative to slide-to-unlock, unlock by tilting your device in the right direction. May be used as a quick game to play each time you unlock your phone. It may also be used as a passcode.</p>
             <p>This project was a team effort where my role was lead developer</p>
         </div>
     ),
     skills:[
         "React Web App Development",
         "HTML animation with Js and CSS",
-        "Mantain state based on phone acceleration events",
+        "Maintain state based on phone acceleration events",
     ]
 }
 

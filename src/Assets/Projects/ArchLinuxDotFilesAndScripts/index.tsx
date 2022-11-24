@@ -7,11 +7,11 @@ const ArchLinuxDotFilesAndScripts: ProjectType = {
     slug: "arch-linux-dot-files-and-scripts",
     media: [video, thumb],
     tags: [
-        'linux',
+        'Linux',
         'bash',
     ],
     github: "https://github.com/Tutadit/Arch-Linux-Dot-files-and-scripts",
-    description: "Various dot files and shell scripts used on my arch linux setup.",
+    description: "Various dot files and shell scripts used on my arch Linux setup.",
     info: (
         <div>
             <p>
@@ -34,7 +34,7 @@ const ArchLinuxDotFilesAndScripts: ProjectType = {
                 <li>run_menu - Floating, self-hiding terminal</li>
                 <li>script-completion - Various bash completion scripts</li>
                 <li>securities - Stocks in terminal</li>
-                <li>setBackground - Change background and set the color scheme to match the background</li>
+                <li>setBackground - Change the background and set the color scheme to match the background</li>
                 <li>setColorsVar - creates a file with the current color scheme as bash variables</li>
                 <li>switch_floating_windows - toggle main floating window</li>
                 <li>volumeControl - Using dunst to visualize volume changes</li>

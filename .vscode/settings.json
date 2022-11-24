@@ -17,6 +17,10 @@
             "language": "typescriptreact",
             "scheme": "file",
             "pattern": "src/Assets/Projects/ArchLinuxDotFilesAndScripts/index.tsx"
+        },
+        {
+            "language": "typescriptreact",
+            "scheme": "file"
         }
     ]
 }

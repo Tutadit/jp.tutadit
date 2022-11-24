@@ -6,6 +6,7 @@ import ZombieSurvival from "./ZombieSurvival"
 import DynamicTheme from "./DynamicTheme"
 import ArchLinuxDotFilesAndScripts from "./ArchLinuxDotFilesAndScripts"
 import TaskGrab from "./TaskGrab"
+import MyPortfolio from "./MyPortfolio"
 
 export type ProjectType = {
     title: string,
@@ -25,6 +26,7 @@ const Projects = [
     SimonSaysPasscode,
     JuanMoJournals,
     ZombieSurvival,
+    MyPortfolio,
     DynamicTheme,
     ArchLinuxDotFilesAndScripts,
     TaskGrab

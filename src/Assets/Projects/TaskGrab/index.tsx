@@ -15,8 +15,8 @@ const TaskGrab: ProjectType = {
     description: "Find local help for various tasks. Features a map and easy contact with prospects.",
     info: (
         <div>
-            <p>Inspired by local flyers, we endavoured in creating a platform were it was easy to find local help for a variety of tasks.</p>
-            <p>My achievements on this project were the development of a map with superimpossed locations that symbolized tasks. I also took part in the establishment of a bedrock for the project.</p>
+            <p>Inspired by local flyers, we endeavored in creating a platform where it was easy to find local help for a variety of tasks.</p>
+            <p>My achievements on this project were the development of a map with superimposed locations that symbolized tasks. I also took part in the establishment of a bedrock for the project.</p>
         </div>
     ),
     skills:[

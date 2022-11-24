@@ -7,8 +7,8 @@ const MultitouchPasscode : ProjectType = {
     slug: "multitouch-passcode",    
     media: [video, thumb],
     tags:[
-        'html',
-        'css',
+        'HTML',
+        'CSS',
         'js'
     ],
     github: "https://github.com/Tutadit/CPSC581-P2-GestureMultiTouch",
@@ -23,7 +23,7 @@ const MultitouchPasscode : ProjectType = {
     skills:[
         "React Web App Development",
         "HTML animation with Js and CSS",
-        "Mantain state based on screen touch down and up events",
+        "Maintain state based on screen touch down and up events",
     ]
 }
 

@@ -2,6 +2,7 @@
     background-color: var(--bg-color-light);
     padding: 9px;
     box-sizing: border-box;
+    display: flex;
 }
 
 .tags-wrapper h4 {

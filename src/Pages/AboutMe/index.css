@@ -18,6 +18,10 @@
     margin: 0 auto;
 }
 
+span.accent {
+    color:var(--accent-color);
+    font-weight: bold;
+}
 @media screen {
 
     @media screen and (max-width: 1080px) {}

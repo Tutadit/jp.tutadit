@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { BsBriefcaseFill, BsList, BsX } from 'react-icons/bs';
 import { GiPerson } from 'react-icons/gi';
-import { MdOutlineConnectWithoutContact } from 'react-icons/md';
 import { useLocation } from 'react-router-dom';
 import { Items } from '..';
 import Container from '../../Container';
@@ -11,15 +10,7 @@ import { motion } from 'framer-motion';
 import './index.css';
 import { stages } from '../../../Animations/animations';
 
-type MainNavProps = {
-
-}
-
-const MainNavPropsDefault = {
-
-}
-
-const MainNav = ({ }: MainNavProps): JSX.Element => {
+const MainNav = (): JSX.Element => {
 
   const [openMenu, setOpenMenu] = useState(false)
   const location = useLocation()
@@ -90,9 +81,6 @@ const MainNav = ({ }: MainNavProps): JSX.Element => {
     </Container >
   );
 }
-
-MainNav.defaultProps = MainNavPropsDefault
-
 export default MainNav;
 
 

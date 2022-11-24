@@ -1,30 +1,30 @@
 import { ProjectType } from '..'
-import video from './video.mp4'
 import thumb from './thumb.png'
+import thumb2 from './thumb2.png'
 
-const MultitouchPasscode : ProjectType = {
-    title: "Multitouch Passcode",
-    slug: "multitouch-passcode",    
-    media: [video, thumb],
+const MyPortfolio : ProjectType = {
+    title: "My Portfolio",
+    slug: "my-portfolio",    
+    media: [thumb, thumb2],
     tags:[
-        'html',
-        'css',
-        'js'
+        'HTML',
+        'CSS',
+        'js',
+        'react'
     ],
-    github: "https://github.com/Tutadit/CPSC581-P2-GestureMultiTouch",
-    live: "http://cpsc581.p2.1.osloz.com",
-    description: "New way to unlock a phone. Tap and hold to make the bubble grow, use the markers to input your password.",
+    github: "https://github.com/Tutadit/jp.tutadit",
+    live: "http://jp.tutadit.com",
+    description: "Simple portfolio showcasing my various projects.",
     info:(
         <div>
-            <p>An alternative to slide-to-unlock, tap-and-hold to make the bubble grow, let go to let it shrink. Create a passcode using the rings around the bubble.</p>
-            <p>This project was a team effort where my role was lead developer</p>
+            <p>Designed and implemented by myself, this portfolio is meant to showcase my work and attract opportunities.</p>
+            <p>I experimented with forms of animation using React and basic javascript.</p>
         </div>
     ),
     skills:[
         "React Web App Development",
-        "HTML animation with Js and CSS",
-        "Mantain state based on screen touch down and up events",
+        "HTML animation with Js and CSS"
     ]
 }
 
-export default MultitouchPasscode
+export default MyPortfolio

@@ -8,24 +8,24 @@ const MrBlobsMorning : ProjectType = {
     slug: "mr-blobs-morning",    
     tags:[
         'js',
-        'html',
-        'css',
+        'HTML',
+        'CSS',
     ],
     github: "https://github.com/Tutadit/CPSC-329---Final-Project",
     live: "https://mrblobsmorning.osloz.com",
     description: "A web-based \"choose your own adeventure\" game highlighting various ways in which one could get hacked.",
     info:(
         <div>
-            <p>A simple, choose-your-own adeventure game, that showcases various forms of phishing scams.</p>
+            <p>A simple, choose-your-own-adventure game, that showcases various forms of phishing scams.</p>
             <p>Take on the role of Mr. Blob, as he goes through his morning routine on his phone. Checking emails, texts, and such.</p>
-            <p>This project was a team effort, my role being lead developer.</p>
+            <p>This project was a team effort, with my role being the lead developer.</p>
         </div>
     ),
     skills:[
-        'Division of coding tasks amongs developers',
+        'Division of coding tasks among developers',
         'Text & Image animation',
-        'Design heirarchical state for the game\'s storyline',
-        'Created lerning guides for newer developers'
+        'Design hierarchical state for the game\'s storyline',
+        'Created learning guides for newer developers'
     ]
 }
 

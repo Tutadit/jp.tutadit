@@ -12,15 +12,15 @@ const DynamicTheme : ProjectType = {
     ],
     slug: "dynamic-theme-firefox-addon",    
     github: "https://github.com/Tutadit/DynamicTheme-FirefoxAddon",    
-    description: "Change firefox theme by maniulating a json file.",
+    description: "Change firefox theme by manipulating a JSON file.",
     info:(
         <div>
-            <p>Change firefox's color theme by manipulating a json file. Useful for dynamic changes of the theme based on outside sources (such as desktop wallpaper)</p>
+            <p>Change firefox's color theme by manipulating a JSON file. Useful for dynamic changes of the theme based on outside sources (such as desktop wallpaper)</p>
         </div>
     ),
     skills:[
         "Firefox extension development",
-        "Json read/write using Python",
+        "JSON read/write using Python",
     ]
 }
 
