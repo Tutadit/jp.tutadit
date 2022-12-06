@@ -1,10 +1,8 @@
 import React from 'react';
-import { Outlet, useLocation } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import Container from '../../Components/Container';
 
-const MyProjects = (): JSX.Element => {
-
-  const location = useLocation()  
+const MyProjects = (): JSX.Element => {  
 
   return (
     <Container>          
