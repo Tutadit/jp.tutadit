@@ -19,7 +19,7 @@ const Social = ({
   name
 }: SocialProps): JSX.Element => {
   return (    
-    <a href={href} target="_blank" className='nav-social'>
+    <a href={href} target="_blank" rel="noreferrer" className='nav-social'>
       {icon && <span className='nav-social-icon'>{icon}</span>}
       { name && <span className='nav-social-name'>{name}</span>}
     </a>  

@@ -1,8 +1,7 @@
 import React from 'react';
-import { ItemProps } from '../Item';
 import './index.css';
 
-interface TextProps extends ItemProps {
+interface TextProps {
   text:string
 }
 

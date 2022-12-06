@@ -1,11 +1,10 @@
 import React from 'react';
-import { ItemProps } from '../Item';
 import Social from '../Social';
 import './index.css';
 
 import { BsGithub, BsLinkedin } from 'react-icons/bs'
 
-export interface SocialsProps extends ItemProps {
+export interface SocialsProps {
   github?:string,
   linkedin?:string,
   className:string

@@ -31,7 +31,7 @@ const useTypist = (
 
   useEffect(() => {
 
-    if (text.length == 0)
+    if (text.length === 0)
       return
 
     const typeText = () => {
@@ -57,7 +57,7 @@ const useTypist = (
     const interval = setInterval(typeText, typingSpeed)
 
     return () => { clearInterval(interval) }
-  }, [])
+  }, [text, typingSpeed])
 
 
   useEffect(() => {
@@ -74,7 +74,8 @@ const useTypist = (
     }
 
     const timeout = setTimeout(resetText, displayTextFor)
-  }, [typist.finished])
+    return () => { clearTimeout(timeout) }
+  }, [typist.finished, displayTextFor])
 
   useEffect(() => {
 
@@ -91,7 +92,8 @@ const useTypist = (
     }
 
     const timeout = setTimeout(resetText, typingSpeed)
-  }, [typist.reset])
+    return () => { clearTimeout(timeout)}
+  }, [typist.reset, text.length, typingSpeed])
 
   return typist
 }

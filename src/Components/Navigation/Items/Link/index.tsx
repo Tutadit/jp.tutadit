@@ -1,8 +1,7 @@
 import React from 'react';
-import { ItemProps } from '../Item';
 import './index.css';
 
-export interface LinkProps extends ItemProps {
+export interface LinkProps {
   download: string | boolean,
   href: string,
   rel: string,

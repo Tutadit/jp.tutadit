@@ -1,6 +1,4 @@
 import React from 'react';
-import { Path } from 'react-router';
-import { ItemProps } from '../Item';
 import './index.css';
 import {
   NavLink as ReactRouterNavLink,
@@ -9,9 +7,8 @@ import {
 
 import { FiChevronRight } from 'react-icons/fi'
 
-type To = string | Partial<Path>;
 
-export interface NavLinkProps extends ItemProps, ReactRouterNavLinkProps {
+export interface NavLinkProps extends ReactRouterNavLinkProps {
   icon: JSX.Element,
   name: string
 }

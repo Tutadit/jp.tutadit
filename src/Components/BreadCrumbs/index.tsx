@@ -4,15 +4,8 @@ import { Link, useLocation } from 'react-router-dom';
 import { FiChevronRight } from 'react-icons/fi'
 import Container from '../Container';
 
-type BreadCrumbsProps = {
 
-}
-
-const BreadCrumbsPropsDefault = {
-
-}
-
-const BreadCrumbs = ({ }: BreadCrumbsProps): JSX.Element => {
+const BreadCrumbs = (): JSX.Element => {
 
   const location = useLocation()
   const crumbs = location.pathname.slice(1).replaceAll('-',' ').split("/")
@@ -35,8 +28,6 @@ const BreadCrumbs = ({ }: BreadCrumbsProps): JSX.Element => {
     </Container>
   );
 }
-
-BreadCrumbs.defaultProps = BreadCrumbsPropsDefault
 
 export default BreadCrumbs;
 

@@ -47,7 +47,7 @@ const Slider = ({
     return () => {
       clearInterval(interval)
     }
-  },[])
+  },[itemsPerPage, slide, slideDuration, slides.length])
 
   return (    
     <div className={`slider ${className}`}>

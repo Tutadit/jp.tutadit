@@ -1,14 +1,5 @@
-import { time } from 'console';
 import React, { useEffect, useLayoutEffect, useState } from 'react';
 import './index.css';
-
-type MatrixProps = {
-
-}
-
-const MatrixPropsDefault = {
-
-}
 
 const BLOCK_SIZE = 40 //px
 const SPAWN_INTERVAL = 100 //ms
@@ -87,7 +78,7 @@ const MatrixBlock = ({
       onDeath()
     }, duration + delay);
     return () => clearTimeout(timeout);
-  }, []);
+  }, [duration, delay, onDeath]);
 
   return (
     <div
@@ -105,7 +96,7 @@ const MatrixBlock = ({
   )
 }
 
-const Matrix = ({ }: MatrixProps): JSX.Element => {
+const Matrix = (): JSX.Element => {
 
   const [width, height] = useWindowSize();
   const [blocks, setBlocks] = useState<JSX.Element[]>([])
@@ -157,7 +148,7 @@ const Matrix = ({ }: MatrixProps): JSX.Element => {
       )
     }, SPAWN_INTERVAL);
     return () => clearInterval(interval);
-  }, [width, height]);
+  }, [width, height, first]);
 
   return (
     <div className='matrix'>
@@ -165,8 +156,6 @@ const Matrix = ({ }: MatrixProps): JSX.Element => {
     </div>
   );
 }
-
-Matrix.defaultProps = MatrixPropsDefault
 
 export default Matrix;
 

@@ -1,22 +1,14 @@
 import React, { useState } from 'react';
 import { useParams } from "react-router-dom";
 import { findProject } from '../../../Components/Projects';
-import Container from '../../../Components/Container';
 
 import './index.css';
 import Slider from '../../../Components/Slider';
 import { BsEyeFill, BsGithub } from 'react-icons/bs';
 import { BiLinkExternal } from 'react-icons/bi';
 
-type ProjectProps = {
 
-}
-
-const ProjectPropsDefault = {
-
-}
-
-const Project = ({ }: ProjectProps): JSX.Element => {
+const Project = (): JSX.Element => {
 
   const params = useParams()
   const project = params.slug ? findProject(params.slug) : null
@@ -98,8 +90,6 @@ const Project = ({ }: ProjectProps): JSX.Element => {
     </div>
   );
 }
-
-Project.defaultProps = ProjectPropsDefault
 
 export default Project;
 
