@@ -14,16 +14,20 @@ const MyPortfolio : ProjectType = {
     ],
     github: "https://github.com/Tutadit/jp.tutadit",
     live: "http://jp.tutadit.com",
-    description: "Simple portfolio showcasing my various projects.",
+    description: "A website designed and implemented by myself to showcase my work and attract job opportunities.",
     info:(
         <div>
-            <p>Designed and implemented by myself, this portfolio is meant to showcase my work and attract opportunities.</p>
-            <p>I experimented with forms of animation using React and basic javascript.</p>
+            <p>A website designed and implemented by myself to showcase my work and attract job opportunities.</p>
+            <p>As the sole developer of this project, my role included every aspect of its creation, from the initial design to the final implementation. I used React for the web app development, and I used HTML, CSS, and JavaScript for the animations and user interactions.</p>
+            <p>Overall, this project was a great opportunity for me to showcase my skills in web development, animation, and user interaction. I'm proud of the work I accomplished, and I'm excited to share it with potential employers and clients.</p>
         </div>
     ),
     skills:[
-        "React Web App Development",
-        "HTML animation with Js and CSS"
+        "React web app development",
+        "HTML animation with JavaScript and CSS",
+        "Web development",
+        "Animation",
+        "User interaction",
     ]
 }
 

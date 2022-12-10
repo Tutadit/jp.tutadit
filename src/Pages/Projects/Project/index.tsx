@@ -13,6 +13,8 @@ const Project = (): JSX.Element => {
   const params = useParams()
   const project = params.slug ? findProject(params.slug) : null
 
+  const projectVideo = project?.media.find(media => media.endsWith('.mp4'))
+
   const [inActions, setInActions] = useState(false)
 
   if (!project)
@@ -58,22 +60,21 @@ const Project = (): JSX.Element => {
           </div>
         </div>
         <div className='visual'>
-          <Slider className='image'
-            slides={
-              project.media.map(media_piece => {
-                if (media_piece.endsWith('.mp4'))
-                  return (<video
-                    src={media_piece}
-                    key={media_piece}
-                    controls={false}
-                    loop={true}
-                    autoPlay
-                    playsInline
-                    muted />)
-
-                return (<img key={media_piece} src={media_piece} alt={project.title} />)
-              })
-            } />
+          {projectVideo ?
+            <video
+              src={projectVideo}
+              controls={false}
+              loop={true}
+              autoPlay
+              playsInline
+              muted /> :
+            <Slider className='image'
+              slides={
+                project.media.map(media_piece =>
+                  <img key={media_piece} src={media_piece} alt={project.title} />
+                )
+              } />
+          }
         </div>
       </div>
       <div className='main-content'>

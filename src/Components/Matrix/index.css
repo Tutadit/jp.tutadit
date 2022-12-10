@@ -15,7 +15,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: fadeIn;
+    animation: fadeInOutCustom;
+    animation-timing-function: ease;
 }
 
 .matrix .matrix-block.first {
@@ -40,7 +41,7 @@
     color: var(--purple)
 }
 
-@keyframes fadeIn {
+@keyframes fadeInOutCustom {
     0% {
         opacity: 0;
     }

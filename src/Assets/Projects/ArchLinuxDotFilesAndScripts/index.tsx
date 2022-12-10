@@ -11,42 +11,29 @@ const ArchLinuxDotFilesAndScripts: ProjectType = {
         'bash',
     ],
     github: "https://github.com/Tutadit/Arch-Linux-Dot-files-and-scripts",
-    description: "Various dot files and shell scripts used on my arch Linux setup.",
+    description: "A collection of scripts and configuration files for customizing an Arch Linux setup.",
     info: (
         <div>
             <p>
-                Various scripts and configuration files for my Arch Linux setup. 
+                The project "Arch Linux - Dot Files And Scripts" is a collection of scripts and configuration files for my Arch Linux setup. This includes configurations for the bspwm tiling window manager, the alacritty terminal, the dunst notification manager, and the sxhkd keyboard shortcuts.
             </p>
-            <h3>Configurations (<code>./config</code>):</h3>
-            <ul>                
-                <li>bspwm - Tiling Window Manager</li>
-                <li>alacritty - Terminal</li>
-                <li>dunst - Notification Manager</li>
-                <li>sxhkd - Keyboard Shortcuts</li>
-            </ul>
-            <h3>Executables (<code>./bin</code>):</h3>
-            <ul>
-                <li>GlobalNeeds - Global Variables used across scripts</li>
-                <li>generateColorPalette - Generate color palettes for all wallpapers</li>
-                <li>make_all_tiled - toggle all nodes in desktop between tiled and floating</li>
-                <li>menu_bar - Custom menubar using lemonbar</li>
-                <li>overlay - Simple transparent overlay</li>
-                <li>run_menu - Floating, self-hiding terminal</li>
-                <li>script-completion - Various bash completion scripts</li>
-                <li>securities - Stocks in terminal</li>
-                <li>setBackground - Change the background and set the color scheme to match the background</li>
-                <li>setColorsVar - creates a file with the current color scheme as bash variables</li>
-                <li>switch_floating_windows - toggle main floating window</li>
-                <li>volumeControl - Using dunst to visualize volume changes</li>
-                <li>wa - Isolate each domain to a single firefox profile</li>
-            </ul>   
+            <p>The ./bin directory contains a variety of executables, including scripts for generating color palettes, toggling between tiled and floating windows, creating a custom menubar, displaying stocks in the terminal, changing the background and color scheme, and more.</p>
+            <p>Overall, this project is a useful collection of tools and configurations that I use to customize my Arch Linux setup. I'm glad to share it with others who might find it useful.</p>
         </div>
     ),
-    skills:[
-        "Detect, setup, and troubleshoot hardware",
-        "Bash programming",
-        "Image palette extraction with ImageMagick",
-        "Working with version control"
+    skills: [
+        "Arch Linux configuration",
+        "Bspwm tiling window manager",
+        "Alacritty terminal",
+        "Dunst notification manager",
+        "Sxhkd keyboard shortcuts",
+        "Bash scripting",
+        "Color palette generation",
+        "Window management",
+        "Terminal customization",
+        "Stock visualization",
+        "Background and color scheme management",
+        "Firefox profile management"
     ]
 }
 
