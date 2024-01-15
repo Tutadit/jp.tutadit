@@ -13,7 +13,7 @@ const MyPortfolio : ProjectType = {
         'react'
     ],
     github: "https://github.com/Tutadit/jp.tutadit",
-    live: "http://jp.tutadit.com",
+    live: "https://jp.tutadit.com",
     description: "A website designed and implemented by myself to showcase my work and attract job opportunities.",
     info:(
         <div>

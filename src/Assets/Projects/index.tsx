@@ -7,6 +7,8 @@ import DynamicTheme from "./DynamicTheme"
 import ArchLinuxDotFilesAndScripts from "./ArchLinuxDotFilesAndScripts"
 import TaskGrab from "./TaskGrab"
 import MyPortfolio from "./MyPortfolio"
+import DareAndExplore from "./DareAndExplore"
+import p345Frames from "./345Frames"
 
 export type ProjectType = {
     title: string,
@@ -21,15 +23,17 @@ export type ProjectType = {
 }
 
 const Projects = [
+    DareAndExplore,
+    p345Frames,
     MrBlobsMorning,
+    TaskGrab,
     MultitouchPasscode,
     SimonSaysPasscode,
     JuanMoJournals,
     ZombieSurvival,
     MyPortfolio,
     DynamicTheme,
-    ArchLinuxDotFilesAndScripts,
-    TaskGrab
+    ArchLinuxDotFilesAndScripts,    
 ]
 
 
